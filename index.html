@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery.entryScroll</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./jquery.entryScroll.css">
+</head>
+<body>
+	<div class="entryScroll">
+		<div>
+			Lorem1 ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolorem tenetur fugit, tempore voluptatibus repellendus libero rem debitis placeat numquam, itaque nesciunt deleniti omnis, quam sit minus optio tempora quis.
+		</div>
+		<div>
+			Lorem2 ipsum dolor sit amet, consectetur adipisicing elit. Quas quidem necessitatibus nihil fugiat repudiandae, ipsum, in provident modi commodi odio aut recusandae molestiae sit! Nostrum ad facilis sit, aliquid ullam.
+		</div>
+		<div>
+			Lorem3 ipsum dolor sit amet, consectetur adipisicing elit. Velit libero ullam, voluptatum ratione eligendi voluptatem aperiam. Odio eos inventore maxime porro nesciunt, doloribus nihil, exercitationem laborum eligendi fugiat cumque incidunt!
+		</div>
+	</div>
+	<script src="./jquery.js"></script>
+	<script src="./jquery.entryScroll.js"></script>
+	<script>
+	$(function(){
+		$(".entryScroll").entryScroll({
+			speed:100,
+			timeSpan:2000,
+			callback:function(){
+				console.log("すべてのエントリーを閲覧しました");
+			}
+		});
+	});
+	</script>
+</body>
+</html>
